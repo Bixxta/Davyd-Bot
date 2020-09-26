@@ -21,6 +21,7 @@ for (const file of commandFiles) {
 client.once('ready', () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 	client.commands.get('thoughts').execute(null, client.guilds.cache.get('311333568360087552').channels.cache.get('720073176738168832'), 'createMode');
+	client.commands.get('pics').execute(null, client.guilds.cache.get('311333568360087552').channels.cache.get('759288296274001932'), 'createMode');
 });
 
 client.on("ready", () => {
@@ -41,6 +42,11 @@ client.on('message', message => {
 	//Next, check if the message was sent from the thought of the davyville
 	if (message.channel === client.guilds.cache.get('311333568360087552').channels.cache.get('720073176738168832')) { //add messages from davy's channel to the davy thoughts
 		client.commands.get('thoughts').execute(message, '', 'addMode');
+	}
+
+	//Check if the message was sent from the picville
+	if (message.channel === client.guilds.cache.get('311333568360087552').channels.cache.get('759288296274001932')) { //add messages from davy's channel to the davy thoughts
+		client.commands.get('pics').execute(message, '', 'addMode');
 	}
 
   	//If the message didn't start with the command prefix, return now
