@@ -1,0 +1,22 @@
+{
+  "name": "davydbot",
+  "version": "1.0.0",
+  "description": "Davydbot is a simple bot made to share davyd thoughts, pictures, and more.",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bixxta/Davyd-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bixxta/Davyd-Bot/issues"
+  },
+  "homepage": "https://github.com/Bixxta/Davyd-Bot#readme"
+}
